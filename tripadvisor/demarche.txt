@@ -1,0 +1,11 @@
+scrapy shell
+fetch ("https://www.tripadvisor.fr/Hotel_Review-g297941-d581157-Reviews-Iberostar_Mehari_Djerba-Djerba_Island_Medenine_Governorate.html")
+comments = response.css("div.cWwQK)
+besh nkharej tous les comments
+comments.css("div.pIRBV span::text").get()
+
+besh nkharej el raiting
+comments.css("div.emWez span::attr(class)").get()
+el raiting mawjoud fi esm el class
+
+https://console.cloud.google.com/
